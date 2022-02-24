@@ -1,98 +1,201 @@
-﻿<html>
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+
+    <title>Vyazan</title>
     <style>
-        section {
-            padding-left: 10em;
-            padding-top: 3em;
+        h1 {
+            font-size: 60px;
+            line-height: 57px;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        body {
-            font-family: Georgia, serif;
-            font-size: 20px;
-            line-height: 1.25em;
-        }
         h2 {
-            font-family: Georgia, serif;
-            font-size: 1.17em;
-            font-weight: bold;
-            margin: 0 0 .5em 0;
+            font-size: 24px;
+            line-height: 27px;
+            font-family: 'Lato', sans-serif;
+            margin: 8px 0 0 25px;
         }
 
         h3 {
-            font-family: Georgia, serif;
-            font-size: 1em;
-            font-weight: bold;
-            margin: 0 0 .1em 0; 
-        }
-        h4 {
-            font-family: Georgia, serif;
-            font-size: 1em;
-            font-weight: normal;
-            margin: 0 0 .1em 0; 
+            font-size: 24px;
+            line-height: 24px;
+            font-family: 'Lora', serif;
+            font-weight: 600;
+            margin: 94px 0 0 0;
         }
 
-        img {
-            float: left;
-            max-width: 15%;
-            height: auto;
-            margin: .36em .5em 0 0;
-            border-radius: 50%;
-        }
-        div {
-            position: relative;
-            width: 635px;
-            margin: 0 0 0 175px;
+
+        p {
+            font-size: 20px;
+            line-height: 28px;
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            margin: 5px 0px 8px 0px;
         }
 
-        ul {
-            margin: 0 0 0 1em;
+        /*.sidenote {font-size: 18px; 
+           line-height: 20px;
+           font-family: 'Montserrat', sans-serif;
+           color: darkolivegreen;}
+
+        .span {font-size: 72px; 
+           line-height: 40px;
+           font-family: 'Montserrat', sans-serif;}*/
+
+        .link {
+            font-size: 18px;
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            margin: 8px 0px 118px 0px;
+        }
+
+        footer {
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 60px 0px 0px 10px;
+        }
+
+        .wrapper {
+            padding: 10px 0px;
+            max-width: 900px;
+        }
+
+
+
+        header {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .menu {
+            flex-grow: 1;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .menu ul {
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 0;
             padding: 0;
+            list-style: none;
         }
 
-        ul li {
-            list-style: bullet;
-            margin: 0 0 .1em 1em;
-            padding-left: 8px;
+        .menu li {
+            margin-right: 23px;
         }
 
-        .first {
-            margin-bottom: 1;
-            margin-top: 1em;
+        .logo {
+            margin-right: 30px;
+        }
+
+        .phone a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+        .menuactive {
+            color: darkolivegreen;
+        }
+
+        .mainphoto {
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
     </style>
-
-    <title>Мурсалимова Ляйсан</title>
 </head>
 
 <body>
-    <section>
-        <img src="IMG_5647.jpeg"/>
-        <div>
-        <h2>Мурсалимова Ляйсан</h2>
-        <h3 class="first">Образование:</h3>
+    <div class="row justify-content-center">
+        <header class="wrapper justify-content-center">
+            <div class="logo">  
+                <img src="iconka.png" height="40" width="40">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/apparel">Одежда</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                    <li> <span class="menuactive">Блог</span></li>
+                </ul>
+            </div>
+            <div class="phone">
+                <a href="phone: +7 495 930-38-71">+7 495 930-38-71</a>
+            </div>
+        </header>
+    </div>
 
-        <ul>
-            <li>май 2021 г. — подготовительные курсы в дизайн-бюро Артёма Горбунова;</li>
-            <li>2014—2017 гг. — Казанский федеральный университет, бакалавриат по специальности «Финансы и кредит».</li>
-        </ul>
+    <div class="container wrapper">
+        <div class="row justify-content-center">
+            <div class="mainphoto col-xs-12 col-s-12 col-m-12 col-lg-12">
+                <img src="photo.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
 
-        <h3 class="first">Опыт работы:</h3>
-        <ul>
-            <li>2017-2018 гг. — старший экономист в дирекции кредитного анализа в ПАО «Ак Барс Банк» (г. Казань).</li>
-        </ul>
-        <h3 class="first">Знание языков:</h3>
-        <ul>
-            <li>английский B2;</li>
-            <li>японский A2.</li>
-        </ul>
-        <h4 class="first">Хобби: танцую сальсу New York, увлекаюсь фотографией и люблю культуру Японии.</h4>
-
+    <div class="container wrapper">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-s-12 col-m-3 col-lg-3">
+                <h1>5&nbsp;причин <br>
+                    полюбить <br>
+                    мериносовую шерсть</h1>
+            </div>
+            <div class="col-xs-12 col-s-12 col-m-3 col-lg-3"></div>
+            <div class="col-xs-12 col-s-12 col-m-6 col-lg-6">
+                <h2>У&nbsp;многих при мысли о&nbsp;шерстяном свитере возникают чувства раздражения в&nbsp;теле.
+                    На&nbsp;самом деле носить свитер может быть не&nbsp;менее приятно, чем обычную трикотажную кофту.
+                    Все дело в&nbsp;составе и&nbsp;качестве шерсти. А&nbsp;еще мериносовая шерсть помогает быстрее
+                    уснуть и&nbsp;лечит дерматит.</h2>
+            </div>
         </div>
 
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-s-12 col-m-10 col-lg-10">
+                <h3>Шерсть помогает быстрее уснуть</h3>
+                <p>Ученые из&nbsp;Сиднейского университета в&nbsp;ходе исследования установили, что люди в&nbsp;пижаме
+                    из&nbsp;мериносовой шерсти засыпают на&nbsp;12&nbsp;минут быстрее и&nbsp;крепче спят. Такой эффект
+                    объясняют ученые тем, что шерсть регулирует температуру тела намного лучше, удерживая человека
+                    в&nbsp;так называемой зоне теплового комфорта.
+                </p>
+                <a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6716586/"> Влияние типа волокна
+                    спальной одежды на качество сна, 2019</a>
+            </div>
+            <div class="col-xs-12 col-s-12 col-m-2 col-lg-2"></div>
 
+            <!-- </div>
+            <div class="col-xs-12 col-s-12 col-m-2 col-lg-2">
+                <p class="sidenote"> На <span>12</span> &nbsp;минут быстрее люди засыпают в мериносовой одежде
+                </p>
+            </div>-->
+        </div>
+    </div>
 
-    </section>
+    <footer class="container wrapper">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-s-12 col-m-12 col-lg-12">
+                <p>© «Вязань», 2022 </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
