@@ -14,75 +14,30 @@
 
     <title>Vyazan</title>
     <style>
-        h1 {
-            font-size: 60px;
-            line-height: 57px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        h2 {
-            font-size: 24px;
-            line-height: 27px;
-            font-family: 'Lato', sans-serif;
-            margin: 8px 0 0 25px;
-        }
-
-        h3 {
-            font-size: 24px;
-            line-height: 24px;
+        body {
             font-family: 'Lora', serif;
-            font-weight: 600;
-            margin: 94px 0 0 0;
+            font-size: 20px;
         }
-
 
         p {
-            font-size: 20px;
             line-height: 28px;
-            font-family: 'Lora', serif;
             font-weight: 400;
-            margin: 5px 0px 8px 0px;
         }
 
-        /*.sidenote {font-size: 18px; 
-           line-height: 20px;
-           font-family: 'Montserrat', sans-serif;
-           color: darkolivegreen;}
-
-        .span {font-size: 72px; 
-           line-height: 40px;
-           font-family: 'Montserrat', sans-serif;}*/
-
-        .link {
-            font-size: 18px;
-            font-family: 'Lora', serif;
-            font-weight: 400;
-            margin: 8px 0px 118px 0px;
+        .container {
+            max-width: 1000px;
+            padding: 25px 54px 28px 40px;
         }
-
-        footer {
-            font-size: 20px;
-            font-family: 'Montserrat', sans-serif;
-            margin: 60px 0px 0px 10px;
-        }
-
-        .wrapper {
-            padding: 10px 0px;
-            max-width: 900px;
-        }
-
-
 
         header {
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;
-            align-items: center;
+            margin-bottom: 29px;
         }
 
         .menu {
             flex-grow: 1;
-            font-size: 20px;
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -95,7 +50,7 @@
         }
 
         .menu li {
-            margin-right: 23px;
+            margin-right: 38px;
         }
 
         .logo {
@@ -106,95 +61,134 @@
             text-decoration: none;
             color: black;
             font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .menuactive {
-            color: darkolivegreen;
+            color: #0FA958;
         }
 
         .mainphoto {
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 17px;
+        }
+
+        h1 {
+            font-size: 60px;
+            line-height: 57px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            margin-bottom: 75px;
+        }
+
+        .subtitle {
+            padding-left: 60px;
+            padding-top: 8px;
+        }
+
+        .subtitle p {
+            font-size: 24px;
+            line-height: 27px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .content {
+            padding-right: 17px;
+        }
+
+        .content p {
+            margin-bottom: 8px;
+        }
+
+        .content:last-child {
+            margin-bottom: 81px;
+        }
+
+        footer p {
+            font-family: 'Montserrat', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <div class="row justify-content-center">
-        <header class="wrapper justify-content-center">
-            <div class="logo">
-                <img src="iconka.png" height="40" width="40">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="/apparel">Одежда</a></li>
-                    <li><a href="/contacts">Контакты</a></li>
-                    <li> <span class="menuactive">Блог</span></li>
-                </ul>
-            </div>
-            <div class="phone">
-                <a href="phone: +7 495 930-38-71">+7 495 930-38-71</a>
-            </div>
-        </header>
-    </div>
+    <div class="container">
 
-    <div class="container wrapper">
-        <div class="row justify-content-center">
+        <div class="row">
+            <header>
+                <div class="logo">
+                    <img src="iconka.png" height="40" width="40">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="/apparel">Одежда</a></li>
+                        <li><a href="/contacts">Контакты</a></li>
+                        <li> <span class="menuactive">Блог</span></li>
+                    </ul>
+                </div>
+                <div class="phone">
+                    <a href="phone: +7 495 930-38-71">+7 495 930-38-71</a>
+                </div>
+            </header>
+        </div>
+
+        <div class="row">
             <div class="mainphoto col-xs-12 col-s-12 col-m-12 col-lg-12">
                 <img src="photo.jpg" class="img-fluid">
             </div>
         </div>
-    </div>
 
-    <div class="container wrapper">
-        <div class="row justify-content-center">
-            <div class="col-xs-12 col-s-12 col-m-3 col-lg-3">
+
+        <div class="row title">
+            <div class="col-xs-12 col-s-12 col-m-6 col-lg-6">
                 <h1>5&nbsp;причин <br>
                     полюбить <br>
                     мериносовую шерсть</h1>
             </div>
-            <div class="col-xs-12 col-s-12 col-m-3 col-lg-3"></div>
-            <div class="col-xs-12 col-s-12 col-m-6 col-lg-6">
-                <h2>У&nbsp;многих при мысли о&nbsp;шерстяном свитере возникают чувства раздражения в&nbsp;теле.
-                    На&nbsp;самом деле носить свитер может быть не&nbsp;менее приятно, чем обычную трикотажную кофту.
+            <div class="col-xs-12 col-s-12 col-m-6 col-lg-6 subtitle">
+                <p>У&nbsp;многих при мысли о&nbsp;шерстяном свитере возникают чувства раздражения в&nbsp;теле.
+                    На&nbsp;самом деле носить свитер может быть не&nbsp;менее приятно, чем обычную трикотажную
+                    кофту.
                     Все дело в&nbsp;составе и&nbsp;качестве шерсти. А&nbsp;еще мериносовая шерсть помогает быстрее
-                    уснуть и&nbsp;лечит дерматит.</h2>
+                    уснуть и&nbsp;лечит дерматит.</p>
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-xs-12 col-s-12 col-m-10 col-lg-10">
-                <h3>Шерсть помогает быстрее уснуть</h3>
-                <p>Ученые из&nbsp;Сиднейского университета в&nbsp;ходе исследования установили, что люди в&nbsp;пижаме
-                    из&nbsp;мериносовой шерсти засыпают на&nbsp;12&nbsp;минут быстрее и&nbsp;крепче спят. Такой эффект
+        <div class="row">
+            <div class="col-xs-12 col-s-12 col-m-9 col-lg-9 content">
+                <h2>Шерсть помогает быстрее уснуть</h2>
+                <p>Ученые из&nbsp;Сиднейского университета в&nbsp;ходе исследования установили, что люди
+                    в&nbsp;пижаме
+                    из&nbsp;мериносовой шерсти засыпают на&nbsp;12&nbsp;минут быстрее и&nbsp;крепче спят. Такой
+                    эффект
                     объясняют ученые тем, что шерсть регулирует температуру тела намного лучше, удерживая человека
                     в&nbsp;так называемой зоне теплового комфорта.
                 </p>
                 <a class="link" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6716586/"> Влияние типа волокна
                     спальной одежды на качество сна, 2019</a>
             </div>
-            <div class="col-xs-12 col-s-12 col-m-2 col-lg-2"></div>
-
-            <!-- </div>
-            <div class="col-xs-12 col-s-12 col-m-2 col-lg-2">
-                <p class="sidenote"> На <span>12</span> &nbsp;минут быстрее люди засыпают в мериносовой одежде
-                </p>
-            </div>-->
         </div>
+
+        <div class="row">
+            <footer>
+                <div class="col-xs-12 col-s-12 col-m-12 col-lg-12">
+                    <p>© «Вязань», 2022 </p>
+                </div>
+            </footer>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     </div>
-
-    <footer class="container wrapper">
-        <div class="row justify-content-center">
-            <div class="col-xs-12 col-s-12 col-m-12 col-lg-12">
-                <p>© «Вязань», 2022 </p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
